@@ -1,0 +1,153 @@
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+body{
+    background-color: #F7ECDE;
+} 
+
+@font-face {
+    font-family: 'pacifico';
+    src: url(../webfonts2/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'righteous';
+    src: url(../webfonts2/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ptSans' ;
+    src: url(../webfonts2/PTSansCaption-Regular.ttf);
+}
+
+
+.line{
+    border: dotted;
+    border-width: 1px 0 1px 0;
+    margin: auto;
+}
+
+.heading{
+    font-family: pacifico;
+    font-size: 50px;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    width: 260px;
+    height: 15px;
+    top: 40px;
+    left: 518px;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+h1:hover::after{
+    height: 40px;
+    top: 20px;
+}
+
+@media all  and (min-width: 1200px) and (max-width: 1399px) {
+    h1::after{
+        left: 428px;
+    }
+}
+
+@media all  and (min-width: 992px) and (max-width: 1199px) {
+    h1::after{
+        left: 338px;
+    }
+}
+
+@media all  and (min-width: 767px) and (max-width: 991px) {
+    h1::after{
+        left: 218px;
+    }
+}
+
+@media all  and (min-width: 545px) and (max-width: 766px) {
+    h1::after{
+        left: 127px;
+    }
+}
+
+@media all  and (min-width: 492px) and (max-width: 544px) {
+    h1::after{
+        left: 97px;
+    }
+}
+
+.heading2{
+    font-family: righteous;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgba(62,165,92,1) 48%, rgba(177,172,73,1) 50%);
+    background-clip: text;
+    color: transparent;
+}
+
+#highlight::selection{
+    background-color: #fec260;
+    color: transparent;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-submit{
+    background-color: #d1512d;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.btn-submit:hover{
+    background-color: #a03315;
+    color: #fff;
+}
+
+.text{
+    font-family: ptSans;
+}
+
+.visit{
+    background-color: #9eb23b;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.visit:hover{
+    background-color: #6e8018;
+    color: #fff;
+}
+
+.visit a{
+    color: #fff;
+}
+
+.line-table{
+    border-bottom: solid 1px lightgray;
+}
+
+.delete{
+    background-color: #eb1d36;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.delete:hover{
+    background-color: #ba081d;
+    color: #fff;
+}
+
+#nameAlert{
+    display: none;
+}
+
+#urlAlert{
+    display: none;
+}

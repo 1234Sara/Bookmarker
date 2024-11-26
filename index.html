@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <main>
+    <div class="container website">
+         <div class="row">
+             <div class="col-lg-12 col-md-12 col-sm-12">
+                <div>
+                <h1 class="text-center my-5 heading position-relative">Bookmarker</h1>
+                <div class="line"></div>
+            <div class=" my-4 text-center">
+                <h2 class="heading2">
+                <i class="fa-solid fa-bookmark"></i>
+                <span id="highlight">Bookmark your favorite sites</span>
+                <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                    <div>
+                        <form class="text">
+                            <label for="siteName" class="my-3 fw-semibold">
+                                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                                Site Name
+                            </label>
+                            <input type="text" id="siteName" class="form-control text" placeholder="Bookmark Name" onkeyup="siteValidation()">
+                            <div id="nameAlert" class="alert alert-danger">Invalid Website Name</div>
+
+                            <label for="siteUrl" class="fw-semibold my-3">
+                                <i class="fa-solid fa-link pe-2"></i> 
+                                Site URL
+                            </label>
+                            <input type="text" id="siteUrl" class="form-control text" placeholder="Website URL" onkeyup="urlValidation()">  
+                            <div id="urlAlert" class="alert alert-danger">Invalid URL Name</div>  
+                        </form>
+
+                        <div class="text-center my-4">
+                            <button type="button" class="btn btn-submit px-5 text-center" onclick="subBtn()">Submit</button>
+                        </div>
+
+                        <div class="line"></div>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container tab">
+            <div class="row my-4">
+                 <div class="col-lg-12 col-md-12 col-sm-12 m-auto">
+                        <table class="text-center bg-light table container">
+                            <thead class="line-table">
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Website Name</th>
+                                    <th>Visit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="demo">
+                            </tbody>
+                        </table>
+                </div>
+ 
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
