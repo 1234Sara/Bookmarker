@@ -13,6 +13,18 @@ if (website !== null){
 }
 
 function subBtn(){
+
+    for (let i = 0; i < sitesUrl.length; i++) {
+        if (sitesUrl[i].name.toLowerCase() === siteNameInput.value.toLowerCase()) {
+            Swal.fire({
+                title: "Duplicate Name",
+                text: "This site name already exists. Please choose a different name.",
+                icon: "error"
+            });
+            return; 
+        }
+    }
+    
     sites = {
         name: siteNameInput.value,
         url: siteUrlInput.value
