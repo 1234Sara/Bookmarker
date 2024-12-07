@@ -110,6 +110,17 @@ h1:hover::after{
     color: #fff;
 }
 
+.btn-update{
+    background-color: #d1512d;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.btn-update:hover{
+    background-color: #a03315;
+    color: #fff;
+}
+
 .text{
     font-family: ptSans;
 }
@@ -144,10 +155,21 @@ h1:hover::after{
     color: #fff;
 }
 
+
+
 #nameAlert{
     display: none;
 }
 
 #urlAlert{
     display: none;
+}
+
+#updateSite{
+    display: none;
+    margin: 0 auto !important;
+}
+
+#addSub{
+    margin: 0 auto !important;
 }

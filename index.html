@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./img/bookmark.png" type="images/x.icon">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -46,11 +47,14 @@
                             <div id="urlAlert" class="alert alert-danger">Invalid URL Name</div>  
                         </form>
 
-                        <div class="text-center my-4">
-                            <button type="button" class="btn btn-submit px-5 text-center" onclick="subBtn()">Submit</button>
+                        <div class="text-center my-4 m-auto">
+                            <button type="button" id="addSub" class="btn btn-submit px-5 text-center" onclick="subBtn()">Submit</button>
+                            <button type="button" id="updateSite" onclick="updateSite()" class="btn btn-update text-center px-5">Update Bookmark</button>
                         </div>
-
                         <div class="line"></div>
+                        <div>
+                            <input id="search" type="text" class="form-control my-5 w-50 m-auto" placeholder="Search..." onkeyup="searchWord()">
+                        </div>
                     </div>
             </div>
         </div>
@@ -65,6 +69,7 @@
                                     <th>Index</th>
                                     <th>Website Name</th>
                                     <th>Visit</th>
+                                    <th>Update</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
